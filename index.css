@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden; /* Pastikan gambar tidak meluap */
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Memastikan gambar mengisi area tanpa terdistorsi */
+  display: block; /* Menghilangkan spasi ekstra di bawah gambar */
+}
+
+/* Gaya untuk overlay gelap */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Hitam dengan opasitas 50% */
+  z-index: 1; /* Pastikan overlay di atas gambar */
+}
+
+/* Gaya untuk teks di tengah */
+.centered-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Memposisikan tepat di tengah */
+  color: white; /* Warna teks putih */
+  text-align: center;
+  z-index: 2; /* Pastikan teks di atas overlay */
+  width: 80%; /* Batasi lebar teks agar tidak terlalu panjang */
+}
+
+#img-beranda {
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+}
