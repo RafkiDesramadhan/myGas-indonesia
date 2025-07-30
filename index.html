@@ -32,6 +32,9 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -64,7 +67,7 @@
                 <a class="nav-link" href="#product">Product</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#kontak-kami">Contact</a>
+                <a class="nav-link" href="#contact">Contact</a>
               </li>
             </ul>
           </div>
@@ -76,15 +79,17 @@
       <img src="asset/img/jumbotron.png" alt="Gambar Latar Belakang" />
       <div class="overlay"></div>
       <div class="centered-text">
-        <h1 class="display-4 fw-bold">
+        <h1 class="display-4 fw-bold" data-aos="fade-up">
           Selamat Datang Di Situs <span class="text-primary">my</span
           ><span class="text-warning">Gas</span>
         </h1>
-        <p class="lead">GAS LPG YANG BERBEDA DARI YANG LAIN</p>
+        <p class="lead" data-aos="fade-up">
+          GAS LPG YANG BERBEDA DARI YANG LAIN
+        </p>
       </div>
     </div>
 
-    <section id="home" class="my-5">
+    <section id="home" class="mt-5" data-aos="fade-up">
       <div class="container">
         <div class="row">
           <div class="col-md-6 mb-2 mb-md-0">
@@ -118,7 +123,7 @@
       </div>
     </section>
 
-    <section id="product" class="py-3">
+    <section id="product" class="py-3 mt-4 bg-light">
       <h2 class="text-center">Product</h2>
       <div class="text-center">
         <h3 class="text-primary">
@@ -131,13 +136,14 @@
           src="asset/img/mygas.png"
           alt="capacity lpg"
           class="img-thumbnail img-fluid border-0"
-          height="400px"
-          width="400px"
+          height="300px"
+          width="300px"
+          data-aos="zoom-in-up"
         />
       </div>
     </section>
 
-    <div class="py-5 px-4 bg-warning" id="contact">
+    <section class="py-5 px-4 bg-warning" id="contact">
       <h1 class="text-center mb-4">Contact</h1>
       <div class="row">
         <div class="col-6 col-md-4 offset-md-3">
@@ -146,68 +152,84 @@
               <i class="bi bi-whatsapp"></i>
             </div>
             <div>
-              <h5><a href="https://wa.me/081384215754">Branch Pulomas</a></h5>
-              <p>Anugrah : 0813-8421-5754</p>
+              <h5>
+                <a href="https://wa.me/+6281384215754" target="_blank"
+                  >Branch Pulomas</a
+                >
+              </h5>
+              <p>Anugerah : 0813-8421-5754</p>
             </div>
           </div>
           <div id="branch-eretan" class="d-flex">
-            <div class="fs-3 me-3">
-              <a class="text-success" href="https://wa.me/08555"
-                ><i class="bi bi-whatsapp"></i
-              ></a>
-            </div>
-            <div>
-              <h5><a href="https://wa.me/085608521642">Branch Eretan</a></h5>
-              <p>Warcam : 0856-0852-1642</p>
-            </div>
-          </div>
-          <div id="branch-bogor" class="d-flex">
-            <div class="fs-3 me-3">
-              <a class="text-success" href="https://wa.me/08555"
-                ><i class="bi bi-whatsapp"></i
-              ></a>
-            </div>
-            <div>
-              <h5><a href="https://wa.me/085608521642">Branch Bogor</a></h5>
-              <p>Dira : 0856-0852-1642</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 col-md-4">
-          <div id="branch-pulomas" class="d-flex">
             <div class="fs-3 me-3 text-success">
               <i class="bi bi-whatsapp"></i>
             </div>
             <div>
-              <h5><a href="https://wa.me/085777691698">Branch Cakung</a></h5>
+              <h5>
+                <a href="https://wa.me/+6285608521642" target="_blank"
+                  >Branch Eretan</a
+                >
+              </h5>
+              <p>Warcam : 0856-0852-1642</p>
+            </div>
+          </div>
+          <div id="branch-bogor" class="d-flex">
+            <div class="fs-3 me-3 text-success">
+              <i class="bi bi-whatsapp"></i>
+            </div>
+            <div>
+              <h5>
+                <a href="https://wa.me/+6289662760387" target="_blank"
+                  >Branch Bogor</a
+                >
+              </h5>
+              <p>Dira : 0896-6276-0387</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4">
+          <div id="branch-cakung" class="d-flex">
+            <div class="fs-3 me-3 text-success">
+              <i class="bi bi-whatsapp"></i>
+            </div>
+            <div>
+              <h5>
+                <a href="https://wa.me/+6285777691698" target="_blank"
+                  >Branch Cakung</a
+                >
+              </h5>
               <p>Budi : 0857-7769-1698</p>
             </div>
           </div>
-          <div id="branch-eretan" class="d-flex">
-            <div class="fs-3 me-3">
-              <a class="text-success" href="https://wa.me/08555"
-                ><i class="bi bi-whatsapp"></i
-              ></a>
+          <div id="branch-bandung" class="d-flex">
+            <div class="fs-3 me-3 text-success">
+              <i class="bi bi-whatsapp"></i>
             </div>
             <div>
-              <h5><a href="https://wa.me/085777691698">Branch Bandung</a></h5>
+              <h5>
+                <a href="https://wa.me/+6285777691698" target="_blank"
+                  >Branch Bandung</a
+                >
+              </h5>
               <p>Budi : 0857-7769-1698</p>
             </div>
           </div>
           <div id="branch-bsd" class="d-flex">
-            <div class="fs-3 me-3">
-              <a class="text-success" href="https://wa.me/08129219369"
-                ><i class="bi bi-whatsapp"></i
-              ></a>
+            <div class="fs-3 me-3 text-success">
+              <i class="bi bi-whatsapp"></i>
             </div>
             <div>
-              <h5><a href="https://wa.me/08555">Branch BSD</a></h5>
-              <p>Nico : 0812-9219-369</p>
+              <h5>
+                <a href="https://wa.me/+628129219369" target="_blank"
+                  >Branch BSD</a
+                >
+              </h5>
+              <p>Nico : +62812-9219-369</p>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <footer class="fixed-bottom">
       <div class="bg-warning text-center p-2">
@@ -226,5 +248,11 @@
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"
     ></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
