@@ -41,10 +41,14 @@
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"
-            ><span class="text-primary">my</span
-            ><span class="text-warning">Gas</span></a
-          >
+          <div class="navbar-brand">
+            <img
+              src="asset/img/logo-mygas.png"
+              alt="logo"
+              height="40px"
+              width="80px"
+            />
+          </div>
           <button
             class="navbar-toggler"
             type="button"
@@ -80,7 +84,7 @@
       <div class="overlay"></div>
       <div class="centered-text">
         <h1 class="display-4 fw-bold" data-aos="fade-down">
-          Selamat Datang Di Situs <span class="text-primary">my</span
+          Selamat Datang Di <span class="text-primary">my</span
           ><span class="text-warning">Gas</span>
         </h1>
         <p class="lead" data-aos="fade-up">
@@ -90,6 +94,7 @@
     </div>
 
     <section id="home" class="mt-5">
+      <h1 class="text-center mb-5">Home</h1>
       <div class="container">
         <div class="row">
           <div class="col-md-6 mb-2 mb-md-0">
@@ -125,11 +130,125 @@
             />
           </div>
         </div>
+        <div class="row mt-5">
+          <div class="col-md-6 mb-2 mb-md-0">
+            <h2 class="text-primary mt-4 mt-md-0" data-aos="fade-right">
+              PT. Total Energi Asia
+            </h2>
+            <div data-aos="fade-right">
+              <p>
+                adalah perusahaan swasta nasional yang bergerak dalam
+                distributor gas lpg. Telah memiliki Ijin Usaha Niaga Umum LPG
+                dengan merk dagang myGas. Berdiri sejak tahun 1991, PT. Bhakti
+                MingasUtama telah memiliki pengalaman dalam bisnis LPG sehingga
+                memiliki Terminal LPG yang berlokasi di Indramayu dan sudah
+                beroperasi sejak tahun 2008.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 mb-2 mb-md-0">
+            <h2 class="text-primary" data-aos="fade-right">Outlet Cabang</h2>
+            <ul class="list-group" data-aos="fade-right">
+              <li class="list-group-item">Pulomas</li>
+              <li class="list-group-item">Eretan</li>
+              <li class="list-group-item">Bogor</li>
+              <li class="list-group-item">Cakung</li>
+              <li class="list-group-item">Bandung</li>
+              <li class="list-group-item">BSD</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="product" class="py-3 mt-4 bg-light">
-      <h2 class="text-center" data-aos="fade-down">Product</h2>
+    <section id="storage-terminal" class="my-5 py-5 bg-primary text-white">
+      <div class="container">
+        <div class="text-center">
+          <h1>Storage Terminal</h1>
+          <p>Dibangun sejak tahun 2004 dan mulai beroperasi sejak tahun 2008</p>
+        </div>
+        <div class="offset-md-4 col-md-4">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="asset/img/tabung-patrol.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="asset/img/tanki.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="asset/img/truck.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="product" class="py-3 mt-4">
+      <h1 class="text-center mb-5" data-aos="fade-down">Product</h1>
       <div class="text-center">
         <h3 class="text-primary">
           <span class="text-primary">my</span
@@ -148,8 +267,8 @@
       </div>
     </section>
 
-    <section class="py-5 px-4 bg-warning" id="contact">
-      <h1 class="text-center mb-4" data-aos="fade-down">Contact</h1>
+    <section id="contact" class="p-5 px-4 bg-warning mb-5">
+      <h1 class="text-center mb-5" data-aos="fade-down">Contact</h1>
       <div class="row">
         <div class="col-6 col-md-4 offset-md-3">
           <div id="branch-pulomas" class="d-flex">
@@ -162,7 +281,7 @@
                   >Branch Pulomas</a
                 >
               </h5>
-              <p>Anugerah : 0813-8421-5754</p>
+              <p>Pak Anugerah : 0813-8421-5754</p>
             </div>
           </div>
           <div id="branch-eretan" class="d-flex">
@@ -175,7 +294,7 @@
                   >Branch Eretan</a
                 >
               </h5>
-              <p>Warcam : 0856-0852-1642</p>
+              <p>Pak Warcam : 0856-0852-1642</p>
             </div>
           </div>
           <div id="branch-bogor" class="d-flex">
@@ -188,7 +307,7 @@
                   >Branch Bogor</a
                 >
               </h5>
-              <p>Dira : 0896-6276-0387</p>
+              <p>Ibu Dira : 0896-6276-0387</p>
             </div>
           </div>
         </div>
@@ -203,7 +322,7 @@
                   >Branch Cakung</a
                 >
               </h5>
-              <p>Budi : 0857-7769-1698</p>
+              <p>Pak Budi : 0857-7769-1698</p>
             </div>
           </div>
           <div id="branch-bandung" class="d-flex">
@@ -216,7 +335,7 @@
                   >Branch Bandung</a
                 >
               </h5>
-              <p>Budi : 0857-7769-1698</p>
+              <p>Pak Budi : 0857-7769-1698</p>
             </div>
           </div>
           <div id="branch-bsd" class="d-flex">
@@ -229,7 +348,7 @@
                   >Branch BSD</a
                 >
               </h5>
-              <p>Nico : +62812-9219-369</p>
+              <p>Pak Nico : +62812-9219-369</p>
             </div>
           </div>
         </div>
@@ -237,8 +356,14 @@
     </section>
 
     <footer class="fixed-bottom">
-      <div class="bg-warning text-center p-2">
-        copyright &copy; myGas - 2025
+      <div class="bg-dark text-light text-center p-2">
+        copyright &copy;
+        <img
+          src="asset/img/logo-mygas.png"
+          alt="logo"
+          height="40px"
+          width="80px"
+        />
       </div>
     </footer>
 
