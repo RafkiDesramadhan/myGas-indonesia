@@ -18,7 +18,7 @@
   display: block; /* Menghilangkan spasi ekstra di bawah gambar */
 }
 
-/* Gaya untuk overlay gelap */
+/* STYLE DARK OVERLAY */
 .overlay {
   position: absolute;
   top: 0;
@@ -29,7 +29,7 @@
   z-index: 1; /* Pastikan overlay di atas gambar */
 }
 
-/* Gaya untuk teks di tengah */
+/* STYLE TEXT CENTER */
 .centered-text {
   position: absolute;
   top: 50%;
@@ -98,7 +98,7 @@
   }
 }
 
-/* animasi tombol */
+/* ANIMATE TOMBOL */
 @keyframes zoomInOut {
   0% {
     transform: scale(1);
@@ -111,6 +111,195 @@
   }
 }
 
+/* SECTION WHAT WE CAN OFFER YOU */
+
 .animated-btn {
   animation: zoomInOut 3s infinite; /* Mengaktifkan animasi: nama, durasi, dan pengulangan */
+}
+
+.animated-btn {
+  transition: all 0.3s ease;
+}
+.animated-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(25, 135, 84, 0.2) !important;
+}
+.card {
+  transition: transform 0.3s ease;
+  background: #f8f9fa;
+}
+.card:hover {
+  transform: translateY(-10px);
+  background: #ffffff;
+  border: 1px solid #198754 !important;
+}
+
+.carousel-item img {
+  width: auto; /* Biarkan lebar sesuai aslinya */
+  max-width: 100%; /* Tapi jangan sampai meluber keluar container */
+  height: auto;
+  margin: 0 auto; /* Untuk meratakan gambar di tengah jika lebih kecil dari container */
+  display: block;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 500px; /* Tentukan tinggi yang ideal untuk carousel Anda */
+  object-fit: cover; /* Gambar akan dipotong sedikit agar tetap tajam dan proporsional */
+}
+
+/* SECTION ABOUT */
+.about-text {
+  text-align: justify;
+  line-height: 1.8;
+  color: #444;
+}
+.section-title {
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 15px;
+}
+.section-title::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 4px;
+  background-color: #0d6efd; /* Warna primary */
+  bottom: 0;
+  left: 0;
+}
+.custom-list .list-group-item {
+  border: none;
+  padding-left: 0;
+}
+.img-custom {
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+.img-custom:hover {
+  transform: scale(1.02);
+}
+
+/* SECTION FAQ */
+#faq {
+  background: linear-gradient(
+    135deg,
+    #0d6efd 0%,
+    #0a58ca 100%
+  ); /* Gradasi agar tidak flat */
+}
+
+.accordion-item {
+  border: none;
+  margin-bottom: 15px; /* Jarak antar pertanyaan */
+  border-radius: 12px !important; /* Sudut membulat */
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Efek bayangan halus */
+}
+
+.accordion-button {
+  padding: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+/* Saat accordion tidak aktif/collapse */
+.accordion-button.collapsed {
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* Saat accordion aktif/terbuka */
+.accordion-button:not(.collapsed) {
+  background-color: #fff9e6; /* Warna krem sangat muda agar teks kuning tetap terbaca */
+  color: #0d6efd;
+  box-shadow: none;
+}
+
+/* Warna icon panah saat aktif */
+.accordion-button:not(.collapsed)::after {
+  filter: brightness(0.5);
+}
+
+.accordion-body {
+  background-color: #ffffff;
+  line-height: 1.7;
+  color: #555;
+  padding-top: 0; /* Merapatkan teks dengan judul */
+}
+
+.faq-title {
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* SECTION CONTACT */
+
+#contact {
+  background-color: #ffc107; /* Warna kuning brand */
+}
+
+.contact-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+  border: none;
+  text-decoration: none !important;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  background-color: #f8f9fa;
+}
+
+.contact-icon {
+  background-color: #25d366; /* Warna Hijau WA */
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+.branch-info h5 {
+  margin-bottom: 2px;
+  color: #0d6efd; /* Biru Primary */
+  font-weight: 700;
+}
+
+.branch-info p {
+  margin-bottom: 0;
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+/* FOOTER */
+footer {
+  /* Memberikan sedikit border atas agar ada pemisah yang elegan */
+  border-top: 3px solid #ffc107; /* Warna kuning brand */
+}
+
+.footer-logo {
+  /* Menjaga agar logo tidak gepeng */
+  height: 35px;
+  width: auto;
+  margin-left: 5px;
+  filter: brightness(1.1); /* Sedikit mencerahkan jika logo agak gelap */
+}
+
+/* Menghilangkan underline pada link jika nanti ada link di footer */
+footer a {
+  text-decoration: none;
+  transition: 0.3s;
 }
